@@ -1,0 +1,51 @@
+@import "./App.css";
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 2.1875rem;
+  border-bottom: 1px hsla(0, 0%, 100%, 0.2) solid;
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+}
+.logo {
+  color: var(--white);
+  font-family: "Antonio", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  height: 4.0625rem;
+}
+
+#link-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+  width: 4.375rem;
+  margin-left: 2.0625rem;
+  margin-top: -10px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+#link-container > a {
+  position: absolute;
+  bottom: 0;
+  font-family: "Spartan-bold", sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link-active {
+  color: hsla(0, 0%, 100%, 1);
+}
+.link {
+  color: hsla(0, 0%, 100%, 0.75);
+}

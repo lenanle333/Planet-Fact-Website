@@ -1,0 +1,63 @@
+@import "./Fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  --bg-color: hsla(240, 67%, 8%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --secondary: hsla(0, 0%, 85%, 1);
+  --mercury-color: hsla(194, 48%, 49%, 1);
+  --venus-color: hsla(33, 82%, 61%, 1);
+  --earth-color: hsla(263, 66%, 51%, 1);
+  --mars-color: hsla(10, 63%, 51%, 1);
+  --jupiter-color: hsla(2, 68%, 53%, 1);
+  --saturn-color: hsla(17, 73%, 46%, 1);
+  --uranus-color: hsla(168, 73%, 44%, 1);
+  --neptune-color: hsla(222, 87%, 56%, 1);
+}
+.page {
+  height: 100vh;
+  background-color: var(--bg-color);
+  background-image: url(../assets/background-stars.svg);
+}
+
+h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 5rem;
+  line-height: 6.4375rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: "Spartan-Bold", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.16069rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+h4 {
+  font-family: "Spartan-bold", sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  color: var(--white);
+}
