@@ -11,7 +11,7 @@ nav {
   color: var(--white);
   font-family: "Antonio", sans-serif;
   font-size: 1.75rem;
-  letter-spacing: -1.05px;
+  letter-spacing: -0.06563rem;
   text-transform: uppercase;
 }
 .nav-links {

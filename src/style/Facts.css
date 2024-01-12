@@ -1,0 +1,16 @@
+.fact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.44rem;
+  gap: 1.88rem;
+  margin-bottom: 3rem;
+}
+.fact-box {
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  width: 15.9375rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem 0 1.69rem 1.44rem;
+}

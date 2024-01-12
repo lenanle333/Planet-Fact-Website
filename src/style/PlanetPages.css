@@ -1,8 +1,30 @@
 @import "./App.css";
 
+.main-container {
+  display: flex;
+  padding: 0 10.31rem;
+  gap: 18rem;
+  margin-top: 7.88rem;
+  justify-content: center;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+}
+.info-container {
+  width: 21.875rem;
+}
+.info-container > h1 {
+  margin-bottom: 1.44rem;
+}
+.info-container > p {
+  margin-bottom: 1.5rem;
+}
+
 #source {
   display: flex;
   align-items: center;
+  margin-bottom: 2.44rem;
 }
 #source-text,
 a {
@@ -17,19 +39,4 @@ a {
   height: 0.75rem;
   width: 0.75rem;
   margin-left: 0.5rem;
-}
-
-button {
-  display: flex;
-  align-items: center;
-  width: 21.875rem;
-  height: 3rem;
-  background-color: transparent;
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
-}
-#btn-num {
-  color: hsla(0, 0%, 100%, 0.5);
-}
-#btn-title {
-  margin-left: 1.75rem;
 }

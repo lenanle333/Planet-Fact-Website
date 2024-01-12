@@ -3,7 +3,7 @@ import Links from "./Links";
 import planetData from "../data.json";
 import "../style/Navigation.css";
 
-const Navigation = ({ activeLink, setActiveLink }) => {
+const Navigation = ({ activeLink = "Mercury", setActiveLink }) => {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Navigation = ({ activeLink, setActiveLink }) => {
           {planets.map((planet, index) => (
             <Links
               key={index}
-              planetName={planet.name}
+              planet={planet.name}
               isActiveLink={activeLink}
               handleActiveLinkClick={() => setActiveLink(planet.name)}
             />
