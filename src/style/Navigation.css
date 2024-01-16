@@ -29,9 +29,11 @@ nav {
   position: relative;
   height: 3.75rem;
   width: 4.375rem;
-  margin-left: 2.0625rem;
   margin-top: -0.625rem;
   color: hsla(0, 0%, 100%, 0.75);
+}
+#link-container:not(:first-child) {
+  margin-left: 2.0625rem;
 }
 #link-container > a {
   position: absolute;
