@@ -1,4 +1,4 @@
-# [Planet Fact Website](https://planet-fact-website.vercel.app/)
+# [Planet Fact Website](https://planet-facts-lenanle333.vercel.app/)
 
 ## Description
 This project, built using ReactJS, HTML, CSS, and JavaScript, displays facts and information about all of the planets in our solar system. 
