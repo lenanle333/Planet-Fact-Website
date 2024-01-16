@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-const Links = ({ planet = "Mercury", isActiveLink, handleActiveLinkClick }) => {
+const Links = ({ planet, isActiveLink, handleActiveLinkClick }) => {
   const colors = {
     Mercury: "hsla(194, 48%, 49%, 1)",
     Venus: "hsla(33, 82%, 61%, 1)",

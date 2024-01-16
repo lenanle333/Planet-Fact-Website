@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Links from "./Links";
-import planetData from "../data.json";
 import "../style/Navigation.css";
 
-const Navigation = ({ activeLink = "Mercury", setActiveLink }) => {
+const Navigation = ({ activeLink, setActiveLink }) => {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
-    setPlanets(planetData.planets);
+    const data = require("../data.json");
+    setPlanets(data.planets);
   }, []);
 
   return (

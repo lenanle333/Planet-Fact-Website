@@ -8,9 +8,13 @@ button {
   align-items: center;
   width: 21.875rem;
   height: 3rem;
-  background-color: transparent;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   padding: 0 1.75rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+button:hover {
+  background-color: hsla(0, 0%, 100%, 0.2);
 }
 #btn-num {
   background-color: transparent;
@@ -22,4 +26,11 @@ button {
 }
 a {
   text-decoration: none;
+}
+
+@media (max-width: 62rem) {
+  button {
+    width: 17.5625rem;
+    height: 2.5rem;
+  }
 }

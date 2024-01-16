@@ -18,8 +18,7 @@ const PageBtns = ({ planet, page }) => {
       <Link to="/">
         <button
           style={{
-            backgroundColor:
-              isActivePage === "Overview" ? colors[planet] : "transparent",
+            backgroundColor: isActivePage === "Overview" ? colors[planet] : "",
           }}
           className="overview"
           onClick={() => handleActivePage("Overview")}
@@ -31,8 +30,7 @@ const PageBtns = ({ planet, page }) => {
       <Link to="/Structure">
         <button
           style={{
-            backgroundColor:
-              isActivePage === "Structure" ? colors[planet] : "transparent",
+            backgroundColor: isActivePage === "Structure" ? colors[planet] : "",
           }}
           className="structure"
           onClick={() => handleActivePage("Structure")}
@@ -44,8 +42,7 @@ const PageBtns = ({ planet, page }) => {
       <Link to="/Geology">
         <button
           style={{
-            backgroundColor:
-              isActivePage === "Geology" ? colors[planet] : "transparent",
+            backgroundColor: isActivePage === "Geology" ? colors[planet] : "",
           }}
           className="geology"
           onClick={() => handleActivePage("Geology")}

@@ -14,3 +14,20 @@
   flex-direction: column;
   padding: 1.25rem 0 1.69rem 1.44rem;
 }
+.fact-box > h4 {
+  margin-bottom: 0.25rem;
+}
+@media (max-width: 62rem) {
+  .fact-container {
+    gap: 0.69rem;
+    margin-bottom: 1.75rem;
+  }
+  .fact-box {
+    width: 10.25rem;
+    height: 5.5rem;
+    padding: 1rem 0 1.19rem 0.94rem;
+  }
+  .fact-box > h4 {
+    margin-bottom: 0.37rem;
+  }
+}

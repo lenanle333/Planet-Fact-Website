@@ -10,14 +10,27 @@
 .img-container {
   display: flex;
   align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.img-container > img {
+  background: transparent;
+}
+#no-img {
+  display: none;
+}
+#geology-img {
+  position: absolute;
+  width: 10.1875rem;
+  height: 12.4375rem;
+  background: transparent;
+  align-self: flex-end;
 }
 .info-container {
   width: 21.875rem;
 }
-.info-container > h1 {
-  margin-bottom: 1.44rem;
-}
-.info-container > p {
+.info-section > h1,
+.info-section > p {
   margin-bottom: 1.5rem;
 }
 
@@ -39,4 +52,30 @@ a {
   height: 0.75rem;
   width: 0.75rem;
   margin-left: 0.5rem;
+}
+@media (max-width: 62rem) {
+  .main-container {
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 0;
+    padding: 0 2.5rem;
+  }
+  .info-container {
+    display: flex;
+    gap: 4.31rem;
+    width: auto;
+    align-items: center;
+  }
+  #source-text,
+  a {
+    font-size: 0.75rem;
+  }
+
+  .info-section > p {
+    margin-bottom: 2rem;
+  }
+  .img-container {
+    height: 550px;
+    margin-top: 2rem;
+  }
 }
