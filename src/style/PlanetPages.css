@@ -54,6 +54,9 @@ a {
   margin-left: 0.5rem;
 }
 @media (max-width: 62rem) {
+  .planet-page {
+    padding-bottom: 2rem;
+  }
   .main-container {
     flex-direction: column;
     gap: 4rem;

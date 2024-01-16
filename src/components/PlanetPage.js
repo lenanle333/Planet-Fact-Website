@@ -30,7 +30,7 @@ const PlanetPage = ({
   };
   handleData();
   return (
-    <div>
+    <div className="planet-page">
       <div className="main-container">
         <div className="img-container">
           <img src={planetImage} alt={planet} />
