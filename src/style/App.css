@@ -59,7 +59,7 @@ p {
   line-height: 1.5625rem;
   color: var(--white);
 }
-@media (max-width: 62rem) {
+@media (max-width: 1023px) {
   h1 {
     font-size: 3rem;
   }

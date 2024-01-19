@@ -8,7 +8,8 @@ import "./style/App.css";
 
 const App = () => {
   const [planet, setPlanet] = useState("Mercury");
-  let planetIndex = 0;
+  const [planetIndex, setPlanetIndex] = useState(0);
+
   const planets = {
     Mercury: 0,
     Venus: 1,
@@ -21,7 +22,7 @@ const App = () => {
   };
   useEffect(() => {
     const data = require("./data.json");
-    planetIndex = planets[planet];
+    setPlanetIndex(planets[planet]);
     setPlanet(data.planets[planetIndex].name);
   }, []);
 
@@ -30,18 +31,9 @@ const App = () => {
       <Navigation activeLink={planet} setActiveLink={setPlanet} />
       <Routes>
         <Route path="/">
-          <Route
-            index
-            element={<Overview planet={planet} planetIndex={planetIndex} />}
-          />
-          <Route
-            path="/Structure"
-            element={<Structure planet={planet} planetIndex={planetIndex} />}
-          />
-          <Route
-            path="/Geology"
-            element={<Geology planet={planet} planetIndex={planetIndex} />}
-          />
+          <Route index element={<Overview planet={planet} />} />
+          <Route path="/Structure" element={<Structure planet={planet} />} />
+          <Route path="/Geology" element={<Geology planet={planet} />} />
         </Route>
       </Routes>
     </>

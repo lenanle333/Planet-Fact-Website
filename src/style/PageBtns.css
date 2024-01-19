@@ -3,19 +3,18 @@
   flex-direction: column;
   gap: 1rem;
 }
-button {
+.btn-containers > a > button {
   display: flex;
   align-items: center;
-  width: 21.875rem;
-  height: 3rem;
+  width: 17.5625rem;
+  height: 2.5rem;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   padding: 0 1.75rem;
   cursor: pointer;
   background-color: transparent;
+  outline: none;
 }
-button:hover {
-  background-color: hsla(0, 0%, 100%, 0.2);
-}
+
 #btn-num {
   background-color: transparent;
   color: hsla(0, 0%, 100%, 0.5);
@@ -27,10 +26,45 @@ button:hover {
 a {
   text-decoration: none;
 }
+/*------------- Mobile Styles -------------*/
+@media (max-width: 420px) {
+  .btn-containers {
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 4.3125rem;
+    left: 0;
+    border-bottom: 1px hsla(0, 0%, 100%, 0.2) solid;
+    gap: 3rem;
+    width: 100vw;
+    padding: 0 1.5rem;
+  }
+  .btn-containers > a > button {
+    height: 3.12rem;
+    width: auto;
+    border: none;
+    padding: 0;
+  }
 
-@media (max-width: 62rem) {
-  button {
-    width: 17.5625rem;
-    height: 2.5rem;
+  #btn-title {
+    margin-left: 0;
+  }
+}
+/*------------- Tablet Styles -------------*/
+@media (min-width: 420px) {
+  .btn-containers > a > button:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border: none;
+  }
+}
+/*------------- Desktop Styles -------------*/
+@media (min-width: 1024px) {
+  .btn-containers > a > button {
+    width: 21.875rem;
+    height: 3rem;
+  }
+  .btn-containers > a > button:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border: none;
   }
 }

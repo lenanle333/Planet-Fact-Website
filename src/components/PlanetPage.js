@@ -1,39 +1,42 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageBtns from "./PageBtns";
 import Facts from "./Facts";
-import iconSrc from "../assets/icon-source.svg";
-import "../style/PlanetPages.css";
-const PlanetPage = ({
-  planetIndex,
-  planet,
-  planetImage,
-  geologyImage,
-  page,
-}) => {
+import SrcIcon from "../assets/icon-source.svg";
+import "../style/PlanetPage.css";
+const PlanetPage = ({ planet, planetImage, geologyImage, page }) => {
+  const planets = {
+    Mercury: 0,
+    Venus: 1,
+    Earth: 2,
+    Mars: 3,
+    Jupiter: 4,
+    Saturn: 5,
+    Uranus: 6,
+    Neptune: 7,
+  };
   const planetInfo = {
     content: "",
     source: "",
   };
-  const handleData = () => {
-    const data = require("../data.json");
 
-    if (page === "Overview") {
-      planetInfo.content = data.planets[planetIndex].overview.content;
-      planetInfo.source = data.planets[planetIndex].overview.source;
-    } else if (page === "Structure") {
-      planetInfo.content = data.planets[planetIndex].structure.content;
-      planetInfo.source = data.planets[planetIndex].structure.source;
-    } else {
-      planetInfo.content = data.planets[planetIndex].geology.content;
-      planetInfo.source = data.planets[planetIndex].geology.source;
-    }
-  };
-  handleData();
+  const data = require("../data.json");
+  let planetIndex = planets[planet];
+  if (page === "Overview") {
+    planetInfo.content = data.planets[planetIndex].overview.content;
+    planetInfo.source = data.planets[planetIndex].overview.source;
+  } else if (page === "Structure") {
+    planetInfo.content = data.planets[planetIndex].structure.content;
+    planetInfo.source = data.planets[planetIndex].structure.source;
+  } else {
+    planetInfo.content = data.planets[planetIndex].geology.content;
+    planetInfo.source = data.planets[planetIndex].geology.source;
+  }
+
   return (
     <div className="planet-page">
       <div className="main-container">
         <div className="img-container">
-          <img src={planetImage} alt={planet} />
+          <img id="planet-img" src={planetImage} alt={planet} />
           <img
             id={geologyImage === "" ? "no-img" : "geology-img"}
             src={geologyImage}
@@ -47,7 +50,7 @@ const PlanetPage = ({
               <p id="source-text">
                 Source: <a href={planetInfo.source}>Wikipedia</a>
               </p>
-              <img src={iconSrc} alt="" />
+              <img src={SrcIcon} alt="" />
             </div>
           </div>
           <PageBtns planet={planet} page={page} />

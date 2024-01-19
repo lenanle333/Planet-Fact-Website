@@ -19,7 +19,7 @@ import {
   NeptuneGeology,
 } from "./assets";
 
-const Geology = ({ planet, planetIndex }) => {
+const Geology = ({ planet }) => {
   const images = {
     Mercury: { planet: Mercury, geology: MercuryGeology },
     Venus: { planet: Venus, geology: VenusGeology },
@@ -33,7 +33,6 @@ const Geology = ({ planet, planetIndex }) => {
 
   return (
     <PlanetPage
-      planetIndex={planetIndex}
       planet={planet}
       planetImage={images[planet].planet}
       geologyImage={images[planet].geology}

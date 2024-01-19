@@ -11,7 +11,7 @@ import {
 } from "./assets";
 import PlanetPage from "./components/PlanetPage";
 
-const Overview = ({ planet, planetIndex }) => {
+const Overview = ({ planet }) => {
   const images = {
     Mercury: Mercury,
     Venus: Venus,
@@ -25,7 +25,6 @@ const Overview = ({ planet, planetIndex }) => {
 
   return (
     <PlanetPage
-      planetIndex={planetIndex}
       planet={planet}
       planetImage={images[planet]}
       geologyImage=""
