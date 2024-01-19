@@ -1,7 +1,7 @@
 # [Planet Fact Website](https://planet-facts-lenanle333.vercel.app/)
 
 ## Description
-This project, built using ReactJS, HTML, CSS, and JavaScript, displays facts and information about all of the planets in our solar system. 
+Discover the wonders of our solar system with this Planet Facts Website. Crafted using React, HTML, CSS, and JavaScript, the website offers a responsive and user-friendly experience across desktops, tablets, and phones. Dive into captivating planetary information and enjoy seamless exploration of the cosmos on any device.
 
 ### Planet Overview Page
 ![Planet Overview Page](https://github.com/lenanle333/Planet-Fact-Website/blob/6625c880d6a77342dde4943eb783b32fc7c0db15/src/Screenshots/Planet%20Overview%20Screenshot.png)
