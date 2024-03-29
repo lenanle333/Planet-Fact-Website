@@ -1,52 +1,52 @@
 import React from "react";
 import "../style/Facts.css";
 const Facts = ({ planet }) => {
-  const planets = {
-    Mercury: 0,
-    Venus: 1,
-    Earth: 2,
-    Mars: 3,
-    Jupiter: 4,
-    Saturn: 5,
-    Uranus: 6,
-    Neptune: 7,
-  };
-  const planetInfo = {
-    rotation: "",
-    revolution: "",
-    radius: "",
-    temp: "",
-  };
+	const planets = {
+		Mercury: 0,
+		Venus: 1,
+		Earth: 2,
+		Mars: 3,
+		Jupiter: 4,
+		Saturn: 5,
+		Uranus: 6,
+		Neptune: 7,
+	};
+	const planetInfo = {
+		rotation: "",
+		revolution: "",
+		radius: "",
+		temp: "",
+	};
 
-  const handleData = () => {
-    const data = require("../data.json");
-    const currPlanet = planets[planet];
-    planetInfo.rotation = data.planets[currPlanet].rotation;
-    planetInfo.revolution = data.planets[currPlanet].revolution;
-    planetInfo.radius = data.planets[currPlanet].radius;
-    planetInfo.temp = data.planets[currPlanet].temperature;
-  };
-  handleData();
-  return (
-    <div className="fact-container">
-      <div className="fact-box">
-        <h4>Rotation Time</h4>
-        <h2>{planetInfo.rotation}</h2>
-      </div>
-      <div className="fact-box">
-        <h4>REVOLUTION TIME</h4>
-        <h2>{planetInfo.revolution}</h2>
-      </div>
-      <div className="fact-box">
-        <h4>radius</h4>
-        <h2>{planetInfo.radius}</h2>
-      </div>
-      <div className="fact-box">
-        <h4>AVERAGE TEMP.</h4>
-        <h2>{planetInfo.temp}</h2>
-      </div>
-    </div>
-  );
+	const handleData = () => {
+		const data = require("../data.json");
+		const currPlanet = planets[planet];
+		planetInfo.rotation = data.planets[currPlanet].rotation;
+		planetInfo.revolution = data.planets[currPlanet].revolution;
+		planetInfo.radius = data.planets[currPlanet].radius;
+		planetInfo.temp = data.planets[currPlanet].temperature;
+	};
+	handleData();
+	return (
+		<div className="fact-container">
+			<section aria-labelledby="planet fact" className="fact-box">
+				<h1 className="fact-header">Rotation Time</h1>
+				<h2 className="fact-info">{planetInfo.rotation}</h2>
+			</section>
+			<section aria-labelledby="planet fact" className="fact-box">
+				<h1 className="fact-header">REVOLUTION TIME</h1>
+				<h2 className="fact-info">{planetInfo.revolution}</h2>
+			</section>
+			<section aria-labelledby="planet fact" className="fact-box">
+				<h1 className="fact-header">radius</h1>
+				<h2 className="fact-info">{planetInfo.radius}</h2>
+			</section>
+			<section aria-labelledby="planet fact" className="fact-box">
+				<h1 className="fact-header">AVERAGE TEMP.</h1>
+				<h2 className="fact-info">{planetInfo.temp}</h2>
+			</section>
+		</div>
+	);
 };
 
 export default Facts;

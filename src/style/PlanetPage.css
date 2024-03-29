@@ -1,162 +1,162 @@
 @import "./App.css";
 
 .main-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .planet-page {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 .img-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 #planet-img {
-  background: transparent;
+	background: transparent;
 }
 .info-container {
-  display: flex;
+	display: flex;
 }
-.info-section > h1,
+.info-section > .planet-name,
 .info-section > p {
-  margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 #no-img {
-  display: none;
+	display: none;
 }
 #geology-img {
-  position: absolute;
-  background: transparent;
-  align-self: flex-end;
+	position: absolute;
+	background: transparent;
+	align-self: flex-end;
 }
 #source {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 #source-text,
 a {
-  color: hsla(0, 0%, 100%, 0.5);
+	color: hsla(0, 0%, 100%, 0.5);
 }
 #source-text > a {
-  font-weight: bold;
-  text-decoration: underline;
+	font-weight: bold;
+	text-decoration: underline;
 }
 #source > img {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 0.5rem;
+	height: 1rem;
+	width: 1rem;
+	margin-left: 0.5rem;
 }
 /*------------- Mobile Styles -------------*/
 @media (max-width: 420px) {
-  .main-container {
-    padding: 0 1.5rem;
-    flex-direction: column;
-    margin-top: 3.125rem;
-  }
-  .planet-page {
-    padding-bottom: 2.94rem;
-  }
-  .img-container {
-    height: 19rem;
-  }
-  #planet-img {
-    align-self: center;
-    transform: scale(0.39);
-  }
-  .info-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .info-section h1 {
-    font-size: 2.5rem;
-  }
-  #source-text {
-    font-size: 0.75rem;
-    line-height: 1.5625rem;
-  }
-  #geology-img {
-    width: 3.25rem;
-    height: 3.97rem;
-    margin-bottom: 11%;
-  }
+	.main-container {
+		padding: 0 1.5rem;
+		flex-direction: column;
+		margin-top: 3.125rem;
+	}
+	.planet-page {
+		padding-bottom: 2.94rem;
+	}
+	.img-container {
+		height: 19rem;
+	}
+	#planet-img {
+		align-self: center;
+		transform: scale(0.39);
+	}
+	.info-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.info-section .planet-name {
+		font-size: 2.5rem;
+	}
+	#source-text {
+		font-size: 0.75rem;
+		line-height: 1.5625rem;
+	}
+	#geology-img {
+		width: 3.25rem;
+		height: 3.97rem;
+		margin-bottom: 11%;
+	}
 }
 /*------------- Tablet Styles -------------*/
 @media (min-width: 420px) {
-  .main-container {
-    flex-direction: column;
-    padding: 0 2.5rem;
-    margin-top: 2.5rem;
-    gap: 2.5rem;
-  }
-  .planet-page {
-    padding-bottom: 2.25rem;
-  }
-  .img-container {
-    height: 31.25rem;
-  }
-  #planet-img {
-    align-self: center;
-    transform: scale(0.64);
-  }
-  .info-container {
-    gap: 4.31rem;
-    align-items: center;
-  }
-  #geology-img {
-    width: 6.519rem;
-    height: 7.95rem;
-    margin-bottom: 7%;
-  }
-  #source-text,
-  a {
-    font-size: 0.75rem;
-  }
+	.main-container {
+		flex-direction: column;
+		padding: 0 2.5rem;
+		margin-top: 2.5rem;
+		gap: 2.5rem;
+	}
+	.planet-page {
+		padding-bottom: 2.25rem;
+	}
+	.img-container {
+		height: 31.25rem;
+	}
+	#planet-img {
+		align-self: center;
+		transform: scale(0.64);
+	}
+	.info-container {
+		gap: 4.31rem;
+		align-items: center;
+	}
+	#geology-img {
+		width: 6.519rem;
+		height: 7.95rem;
+		margin-bottom: 7%;
+	}
+	#source-text,
+	a {
+		font-size: 0.75rem;
+	}
 
-  .info-section > p {
-    margin-bottom: 2rem;
-  }
+	.info-section > p {
+		margin-bottom: 2rem;
+	}
 }
 /*------------- Desktop Styles -------------*/
 @media (min-width: 1024px) {
-  .main-container {
-    flex-direction: row;
-    gap: 6rem;
-    margin-top: 7.88rem;
-    padding: 0 10.31rem;
-  }
-  .planet-page {
-    padding-bottom: 3.5rem;
-  }
-  .img-container {
-    width: 41.75rem;
-  }
-  /* Doesn't stretch image */
-  #planet-img {
-    align-self: center;
-    transform: scale(1);
-  }
-  .info-container {
-    flex-direction: column;
-    width: 21.875rem;
-    gap: 2.44rem;
-  }
-  .info-section > p {
-    margin-bottom: 1.5rem;
-  }
-  .info-section > h1 {
-    margin-bottom: 1.44rem;
-  }
-  #geology-img {
-    width: 10.187rem;
-    height: 12.437rem;
-    margin-bottom: 0;
-  }
-  #source-text,
-  #source-text a {
-    font-size: 0.875rem;
-    line-height: 1.5625rem;
-  }
+	.main-container {
+		flex-direction: row;
+		gap: 6rem;
+		margin-top: 7.88rem;
+		padding: 0 10.31rem;
+	}
+	.planet-page {
+		padding-bottom: 3.5rem;
+	}
+	.img-container {
+		width: 41.75rem;
+	}
+	/* Doesn't stretch image */
+	#planet-img {
+		align-self: center;
+		transform: scale(1);
+	}
+	.info-container {
+		flex-direction: column;
+		width: 21.875rem;
+		gap: 2.44rem;
+	}
+	.info-section > p {
+		margin-bottom: 1.5rem;
+	}
+	.info-section > .planet-name {
+		margin-bottom: 1.44rem;
+	}
+	#geology-img {
+		width: 10.187rem;
+		height: 12.437rem;
+		margin-bottom: 0;
+	}
+	#source-text,
+	#source-text a {
+		font-size: 0.875rem;
+		line-height: 1.5625rem;
+	}
 }

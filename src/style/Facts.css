@@ -1,70 +1,70 @@
 .fact-container {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
 }
 .fact-box {
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+	border: 1px solid hsla(0, 0%, 100%, 0.2);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 /*------------- Mobile Styles -------------*/
 @media (max-width: 420px) {
-  .fact-container {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1.75rem;
-    gap: 0.5rem;
-    padding: 0 1.5rem;
-  }
-  .fact-box {
-    align-items: center;
-    justify-content: space-between;
-    width: 20.4375rem;
-    height: 3rem;
-    flex-direction: row;
-    padding: 0 1.5rem;
-  }
-  .fact-box > h4 {
-    margin-bottom: 0;
-    line-height: normal;
-  }
-  .fact-box > h2 {
-    font-size: 1.25rem;
-    text-align: right;
-    letter-spacing: -0.04688rem;
-  }
+	.fact-container {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1.75rem;
+		gap: 0.5rem;
+		padding: 0 1.5rem;
+	}
+	.fact-box {
+		align-items: center;
+		justify-content: space-between;
+		width: 20.4375rem;
+		height: 3rem;
+		flex-direction: row;
+		padding: 0 1.5rem;
+	}
+	.fact-box > .fact-header {
+		margin-bottom: 0;
+		line-height: normal;
+	}
+	.fact-box > .fact-info {
+		font-size: 1.25rem;
+		text-align: right;
+		letter-spacing: -0.04688rem;
+	}
 }
 /*------------- Tablet Styles -------------*/
 @media (min-width: 420px) {
-  .fact-container {
-    display: flex;
-    justify-content: center;
-    gap: 0.69rem;
+	.fact-container {
+		display: flex;
+		justify-content: center;
+		gap: 0.69rem;
 
-    margin-top: 5.44rem;
-  }
-  .fact-box {
-    width: 10.25rem;
-    height: 5.5rem;
-    padding: 1rem 0 1.19rem 0.94rem;
-  }
-  .fact-box > h4 {
-    margin-bottom: 0.37rem;
-  }
+		margin-top: 5.44rem;
+	}
+	.fact-box {
+		width: 10.25rem;
+		height: 5.5rem;
+		padding: 1rem 0 1.19rem 0.94rem;
+	}
+	.fact-box > .fact-header {
+		margin-bottom: 0.37rem;
+	}
 }
 /*------------- Desktop Styles -------------*/
 @media (min-width: 1024px) {
-  .fact-container {
-    gap: 1.88rem;
-  }
-  .fact-box {
-    width: 15.9375rem;
-    height: 8rem;
-    padding: 1.25rem 0 1.69rem 1.44rem;
-  }
-  .fact-box > h4 {
-    margin-bottom: 0.25rem;
-  }
+	.fact-container {
+		gap: 1.88rem;
+	}
+	.fact-box {
+		width: 15.9375rem;
+		height: 8rem;
+		padding: 1.25rem 0 1.69rem 1.44rem;
+	}
+	.fact-box > .fact-header {
+		margin-bottom: 0.25rem;
+	}
 }
