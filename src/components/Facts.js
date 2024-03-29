@@ -29,19 +29,19 @@ const Facts = ({ planet }) => {
 	handleData();
 	return (
 		<div className="fact-container">
-			<section aria-label="planet fact" className="fact-box">
+			<section aria-label="rotation time fact" className="fact-box">
 				<h1 className="fact-header">Rotation Time</h1>
 				<h2 className="fact-info">{planetInfo.rotation}</h2>
 			</section>
-			<section aria-label="planet fact" className="fact-box">
+			<section aria-label="revolution time fact" className="fact-box">
 				<h1 className="fact-header">REVOLUTION TIME</h1>
 				<h2 className="fact-info">{planetInfo.revolution}</h2>
 			</section>
-			<section aria-label="planet fact" className="fact-box">
+			<section aria-label="radius fact" className="fact-box">
 				<h1 className="fact-header">radius</h1>
 				<h2 className="fact-info">{planetInfo.radius}</h2>
 			</section>
-			<section aria-label="planet fact" className="fact-box">
+			<section aria-label="average temperature fact" className="fact-box">
 				<h1 className="fact-header">AVERAGE TEMP.</h1>
 				<h2 className="fact-info">{planetInfo.temp}</h2>
 			</section>
