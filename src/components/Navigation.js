@@ -19,7 +19,7 @@ const Navigation = ({ activeLink, setActiveLink, toggleNavMenu }) => {
 		<>
 			<nav ref={navRef}>
 				<div className={navbarToggle === true ? "resp-overlay" : "overlay"}>
-					<h1 aria-labelledby="logo" className="logo">
+					<h1 aria-labely="logo" className="logo">
 						The Planets
 					</h1>
 					<button
@@ -29,7 +29,7 @@ const Navigation = ({ activeLink, setActiveLink, toggleNavMenu }) => {
 							setNavbarToggle(!navbarToggle);
 						}}
 					>
-						<img src={NavIcon} />
+						<img alt="Navigation toggle" src={NavIcon} />
 					</button>
 				</div>
 				<div className={navbarToggle === true ? "resp-links" : "nav-links"}>

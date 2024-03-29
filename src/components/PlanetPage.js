@@ -34,7 +34,7 @@ const PlanetPage = ({ planet, planetImage, geologyImage, page }) => {
 
 	return (
 		<div className="planet-page">
-			<main className="main-container">
+			<div className="main-container">
 				<div className="img-container">
 					<img id="planet-img" src={planetImage} alt={planet} />
 					<img
@@ -44,10 +44,7 @@ const PlanetPage = ({ planet, planetImage, geologyImage, page }) => {
 					/>
 				</div>
 				<div className="info-container">
-					<section
-						aria-labelledby="planet information"
-						className="info-section"
-					>
+					<section aria-label="planet information" className="info-section">
 						<h1 className="planet-name">{planet}</h1>
 						<p>{planetInfo.content}</p>
 						<div id="source">
@@ -59,7 +56,7 @@ const PlanetPage = ({ planet, planetImage, geologyImage, page }) => {
 					</section>
 					<PageBtns planet={planet} page={page} />
 				</div>
-			</main>
+			</div>
 			<Facts planet={planet} />
 		</div>
 	);
